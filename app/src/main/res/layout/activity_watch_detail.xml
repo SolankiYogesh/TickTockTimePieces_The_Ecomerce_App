@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".WatchDetailActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/image_back"
+                android:layout_margin="5dp"
+                android:src="@drawable/goback"
+                app:tint="#FFF"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:id="@+id/text_toolbar_title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/app_name"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/cardview_default_radius"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:cardUseCompatPadding="true"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.asura.library.views.PosterSlider
+                    android:id="@+id/poster_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:defaultIndicator="circle"
+                    app:imageSlideInterval="5000"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:hideIndicators="true"
+                    app:loopSlides="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:background="@color/colorPrimary">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="#fff"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:id="@+id/text_comapny"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,InefficientWeight" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="#fff"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:id="@+id/text_price"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:layout_margin="5dp"
+                        android:id="@+id/text_Published_year"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/text_description"
+                    android:textSize="16sp"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="50dp"
+                       android:text="@string/quantity"
+                       android:textSize="25sp" />
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                     android:gravity="center"
+                       android:orientation="horizontal">
+                       <ImageView
+                           android:id="@+id/decrease"
+                           android:src="@drawable/minus"
+                           android:layout_width="50dp"
+                           android:layout_height="50dp"
+                           android:text="@string/min"
+                           tools:ignore="ContentDescription" />
+
+                       <TextView
+                           android:id="@+id/integer_number"
+                           android:layout_width="50dp"
+                           android:layout_height="50dp"
+                           android:text="@string/_0"
+                           android:textStyle="bold"
+                           android:gravity="center"
+                           android:textSize="40sp" />
+
+                       <ImageView
+                           android:id="@+id/increase"
+                           android:src="@drawable/plus"
+                           android:layout_width="50dp"
+                           android:layout_height="50dp"
+                           android:text="@string/plus"
+                           tools:ignore="ContentDescription" />
+                   </LinearLayout>
+
+               </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/add_to_cart"
+                    android:text="@string/addtocart"
+                    android:textSize="25sp"
+                    android:textColor="#000"
+                    android:background="@drawable/amazone_btn"
+                    android:gravity="center"
+                    android:layout_margin="25dp"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>

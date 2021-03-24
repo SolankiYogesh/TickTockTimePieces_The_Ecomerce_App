@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "367381198684",
+    "firebase_url": "https://ticktocktimepieces-77e76-default-rtdb.firebaseio.com",
+    "project_id": "ticktocktimepieces-77e76",
+    "storage_bucket": "ticktocktimepieces-77e76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367381198684:android:7c78226f8402e714363399",
+        "android_client_info": {
+          "package_name": "com.pc.ticktocktimepieces"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367381198684-1utj53offqepno48kr4d7ff2793h80lr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpgqqtrP88QKvzj3ZuGLxm1i1q8SqKZig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367381198684-1utj53offqepno48kr4d7ff2793h80lr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367381198684:android:ecb097ee5e97a264363399",
+        "android_client_info": {
+          "package_name": "com.syd.ticktocktimepieces"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367381198684-1utj53offqepno48kr4d7ff2793h80lr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpgqqtrP88QKvzj3ZuGLxm1i1q8SqKZig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367381198684-1utj53offqepno48kr4d7ff2793h80lr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
